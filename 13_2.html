@@ -1,0 +1,76 @@
+<!DOCTYPE html>     
+<html>
+<head>     
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<!--<script src="cordova.js"></script>-->   
+<link rel="stylesheet" href="css/jquery.mobile.min.css" />     
+<script src="js/jquery-2.1.4.min.js"></script>     
+<script src="js/jquery.mobile.min.js"></script>   
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$top_height=$("div[data-role=header]").height();
+	$bottom_height=$("div[data-role=footer]").height();
+	$body_height=$(window).height()-$top_height-$bottom_height;
+
+	$body_height=$body_height-10;
+	$body_height=$body_height+"px";
+	$("div[data-role=metro_body]").width("100%").height($body_height);
+});
+</script>  
+<style type="text/css">
+*{ margin:0px; padding:0px;}
+.metro_color1{ background-color:#ef9c00;}
+.metro_color2{ background-color:#2ebf1b;}
+.metro_color3{ background-color:#00aeef;}
+.metro_color4{ background-color:#ed2b84;}
+.metro_rec{ width:48%; height:22%; float:left; margin:1%;}
+</style>
+</head>               
+<body>
+	<div data-role="page" style="background-color:#666">
+		<div data-role="header" data-position="fixed">
+			<h1>温州科技职业学院</h1>
+		</div>
+  <div data-role="metro_body">	
+   <div class="metro_color1 metro_rec">
+    <a href="13_3.html" ><img src="images/p1.png" width="100%" height="100%"/></a>
+   </div>
+   <div class="metro_color2 metro_rec">
+    <img src="images/p2.png" width="100%" height="100%"/>
+   </div>
+   <div class="metro_color3 metro_rec">
+   	<img src="images/p3.png" width="100%" height="100%"/>
+   </div>
+   <div class="metro_color4 metro_rec">
+    <img src="images/p4.png" width="100%" height="100%"/>
+   </div>
+   <div class="metro_color1 metro_rec">
+    <img src="images/p5.png" width="100%" height="100%"/>
+   </div>
+   <div class="metro_color2 metro_rec">
+   	<img src="images/p6.png" width="100%" height="100%"/>
+   </div>
+   <div class="metro_color3 metro_rec">
+    <img src="images/p7.png" width="100%" height="100%"/>
+   </div>
+   <div class="metro_color4 metro_rec">
+    <img src="images/p8.png" width="100%" height="100%"/>
+   </div>
+  </div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a id="chat" href="#" data-icon="plus">校园简介</a></li>        
+					<li><a id="email" href="#" data-icon="plus">校规校史</a></li>        
+					<li><a id="skull" href="#" data-icon="plus">校园生活</a></li>        
+					<li><a id="beer" href="#" data-icon="plus" rel="external">校园风光</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
